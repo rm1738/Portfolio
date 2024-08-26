@@ -58,7 +58,7 @@
     border-radius: 5px;
     width: auto;
     position: relative;
-    top: -20px; /* Adjust this value to move the button up or down */
+    top: -20px;
     z-index: 10;
 }
 
@@ -66,7 +66,7 @@
 .vertical-timeline-element--education .vertical-timeline-element-content {
     color: #ffffff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 0 30px 0; /* Align to the line */
+    margin: 0 0 30px 0;
     padding: 20px;
     text-align: left;
 }
@@ -86,14 +86,13 @@
 
 .vertical-timeline-element--work .vertical-timeline-element-icon,
 .vertical-timeline-element--education .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 4px #ffcc00, inset 0 2px 0 #ffcc00;
-    margin-left: -10px; /* Align icon properly on the timeline */
+    display: none; /* Hide the red circles/icons */
 }
 
 .vertical-timeline::before {
     background-color: #ffcc00;
-    top: 50px; /* Adjust this value to match the button's position */
-    bottom: 20px; /* Adjust this to ensure it ends just above the switch button */
+    top: 50px;
+    bottom: 20px;
     position: absolute;
     content: '';
     width: 4px;
@@ -130,7 +129,7 @@
         font-size: 1em;
         width: auto;
         margin-top: 10px;
-        top: -15px; /* Adjust this value for mobile to line up correctly */
+        top: -15px;
     }
 
     .vertical-timeline-element--left .vertical-timeline-element-date,
