@@ -3,7 +3,7 @@
   text-align: center;
   padding: 0; /* Remove padding to avoid white space */
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0; /* Remove margin to prevent white space */
   box-sizing: border-box;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -52,7 +52,7 @@ button {
   max-width: 100%; 
   padding: 12px;
   font-size: 1rem;
-  margin: 10px auto;
+  margin: 0 auto; /* Ensure buttons are centered with no extra margin */
   box-sizing: border-box;
   background-color: #61dafb;
   color: #fff;
@@ -80,7 +80,7 @@ button:hover {
   .App-header {
     min-height: 50vh;
     font-size: calc(8px + 2vmin);
-    padding: 20px;
+    padding: 0; /* Remove padding on mobile */
     width: 100%;
     margin: 0;
   }
@@ -99,11 +99,13 @@ button:hover {
     width: 100%; /* Ensure buttons take up full width */
     padding: 12px;
     font-size: 1rem;
-    margin: 10px auto;
+    margin: 0 auto; /* Center buttons with no extra margin */
   }
 }
 
 /* Prevent any horizontal scrolling on the body */
 body {
   overflow-x: hidden;
+  padding: 0; /* Remove any padding from the body */
+  margin: 0; /* Remove any margin from the body */
 }
