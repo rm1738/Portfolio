@@ -143,7 +143,7 @@ function Experience() {
               contentStyle={{ background: '#7c1a1a', color: '#fff' }}  
               animate={false} /* Disable animation */
             >
-              <h3 className="vertical-timeline-element-title">Emirates International School</h4>
+              <h3 className="vertical-timeline-element-title">Emirates International School</h3>
               <h4 className="vertical-timeline-element-subtitle">Dubai, UAE</h4>
             </VerticalTimelineElement>
           </>
