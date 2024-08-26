@@ -1,7 +1,10 @@
 /* General Styles */
 .App {
   text-align: center;
-  padding: 10px; /* Add padding for better spacing on smaller screens */
+  padding: 10px;
+  max-width: 100%; /* Ensure the app container doesn't overflow */
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -26,14 +29,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-sizing: border-box;
+  width: 100%; /* Ensure the header spans the full width */
 }
 
 /* Link Styling */
 .App-link {
   color: #61dafb;
   text-decoration: none;
-  padding: 10px; /* Add padding around links for better tap targets */
-  font-size: 1.1em; /* Increase font size slightly for readability */
+  padding: 10px;
+  font-size: 1.1em;
 }
 
 /* Keyframes for Logo Spin Animation */
@@ -49,17 +54,25 @@
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
   .App-header {
-    min-height: 50vh; /* Reduce height on mobile */
-    font-size: calc(8px + 2vmin); /* Slightly smaller font on mobile */
-    padding: 20px; /* Add padding for better spacing */
+    min-height: 50vh;
+    font-size: calc(8px + 2vmin);
+    padding: 20px;
+    width: 100%; /* Ensure header doesn't leave white space */
   }
 
   .App-logo {
-    height: 30vmin; /* Adjust logo size for mobile */
-    animation: App-logo-spin infinite 30s linear; /* Slower animation on mobile */
+    height: 30vmin;
+    animation: App-logo-spin infinite 30s linear;
   }
 
   .App-link {
-    font-size: 16px; /* Smaller size for mobile screens */
+    font-size: 16px;
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+  }
+
+  button {
+    width: 100%; /* Ensure buttons take up full width of the container */
+    padding: 12px;
+    font-size: 1rem;
   }
 }
