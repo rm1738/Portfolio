@@ -1,15 +1,16 @@
 .experience-container {
-    padding: 50px;
+    padding: 20px; /* Reduce padding for smaller screens */
     background-color: #1c1b1b; /* Dark background to complement the maroon */
     color: #ffcc00;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
 
 .experience-title {
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 50px;
+    font-size: 2.5em; /* Adjust font size for mobile */
+    margin-bottom: 30px; /* Reduce margin for smaller screens */
     color: #ffcc00;
 }
 
@@ -17,12 +18,13 @@
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 40px;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    gap: 10px; /* Reduce gap for smaller screens */
+    margin-bottom: 20px; /* Reduce margin for smaller screens */
 }
 
 .nav-button {
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 1em;
     color: #ffcc00;
     background: transparent;
@@ -30,12 +32,8 @@
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-button:hover {
-    background-color: #ffcc00;
-    color: #330000;
-    transform: scale(1.05);
+    width: 100%; /* Full width on mobile */
+    max-width: 250px; /* Cap the width for larger screens */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content {
@@ -43,28 +41,33 @@
     color: #ffffff; /* Text color */
     border-radius: 8px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
     margin-left: 0; /* Align left */
-    margin-bottom: 30px; /* Add space between elements */
+    margin-bottom: 20px; /* Reduce space between elements for smaller screens */
+    padding: 15px; /* Add padding for better spacing */
+    box-sizing: border-box;
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content h3,
 .vertical-timeline-element--work .vertical-timeline-element-content h4 {
     color: #ffcc00; /* Gold color for titles */
+    font-size: 1.5em; /* Adjust font size for mobile */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content p {
     color: #ffffff; /* White color for descriptions */
+    font-size: 1em; /* Adjust font size for readability */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-icon {
     box-shadow: 0 0 0 4px #ffcc00, inset 0 2px 0 #ffcc00; /* Gold border around the icon */
+    margin-left: -12px; /* Adjust icon position */
 }
 
 .vertical-timeline::before {
     background-color: #ffcc00; /* Gold color for the line */
-    top: 20px; /* Adjust this value to control where the line starts */
+    top: 20px;
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content:hover {
@@ -74,61 +77,50 @@
 
 /* Align dates properly for left-aligned content */
 .vertical-timeline-element--left .vertical-timeline-element-date {
-    left: -120px; /* Adjust left offset to bring the date closer */
+    left: -100px; /* Adjust left offset to bring the date closer on mobile */
     text-align: right;
 }
 
 /* Align dates properly for right-aligned content */
 .vertical-timeline-element--right .vertical-timeline-element-date {
-    right: -120px; /* Adjust right offset to bring the date closer */
+    right: -100px; /* Adjust right offset to bring the date closer on mobile */
     text-align: left;
 }
 
-/* Link style adjustments */
-.vertical-timeline-element--work a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit color from parent */
-}
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
 
-.vertical-timeline-element--work a:hover,
-.vertical-timeline-element--work a:focus,
-.vertical-timeline-element--work a:active {
-    text-decoration: none; /* No underline on hover, focus, or active */
-    color: inherit; /* Keep color consistent */
-}
+    .experience-title {
+        font-size: 2em; /* Further reduce font size for smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
 
-/* Experience.css */
-.switch-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: -40px; /* Negative margin to move the button higher */
-  }
-  
-  .switch-button {
-    background-color: #ffcc00;
-    border: none;
-    color: #7c1a1a;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  
-  .skills-section ul {
-    list-style-type: disc; /* Adds bullet points */
-    padding-left: 20px;
-    margin: 0;
-  }
-  
-  .skills-section li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  
-  .skill-icon {
-    margin-right: 10px; /* Adjust this to control space between icon and text */
-    font-size: 1.2rem;
-  }
-  
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+    }
+
+    .nav-button {
+        width: 100%; /* Full width buttons on mobile */
+        margin-bottom: 10px; /* Add margin between stacked buttons */
+    }
+
+    .vertical-timeline-element--work .vertical-timeline-element-content {
+        padding: 10px; /* Adjust padding for mobile */
+        margin-bottom: 15px; /* Adjust space between elements */
+    }
+
+    .vertical-timeline-element--work .vertical-timeline-element-content h3,
+    .vertical-timeline-element--work .vertical-timeline-element-content h4 {
+        font-size: 1.2em; /* Further adjust font size for smaller screens */
+    }
+
+    .vertical-timeline-element--left .vertical-timeline-element-date,
+    .vertical-timeline-element--right .vertical-timeline-element-date {
+        font-size: 0.9em; /* Adjust font size for dates */
+        left: -80px; /* Adjust date position on mobile */
+        right: -80px;
+    }
+}
