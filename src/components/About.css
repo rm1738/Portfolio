@@ -164,8 +164,7 @@
   }
 
   .download-button {
-    width: 100%;
+    width: calc(100% - 40px); /* Adjust width and ensure it doesn’t overflow */
     max-width: none; /* Allow download button to stretch */
   }
 }
- 
