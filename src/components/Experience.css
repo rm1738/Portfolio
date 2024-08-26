@@ -131,4 +131,12 @@ html, body {
     .skills-section ul {
         padding-left: 15px;
     }
+
+    /* Disable Animations on Mobile */
+    .vertical-timeline-element--work .vertical-timeline-element-content,
+    .vertical-timeline-element--education .vertical-timeline-element-content,
+    .switch-button {
+        transition: none;
+        animation: none;
+    }
 }
