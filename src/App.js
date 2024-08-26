@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
@@ -10,6 +10,20 @@ import IEEE from './components/IEEE';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Detect if the user is on a mobile device
+    const isMobile = window.innerWidth <= 768;
+
+    // Disable animations for the Experience page on mobile devices
+    if (isMobile) {
+      const experiencePage = document.querySelector('.experience-container');
+      if (experiencePage) {
+        experiencePage.style.transition = 'none'; // Disable CSS transitions
+        experiencePage.style.animation = 'none';  // Disable CSS animations
+      }
+    }
+  }, []);
+
   return (
     <Router>
       <div className="App">
