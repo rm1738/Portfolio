@@ -5,8 +5,8 @@ html, body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    overflow-y: auto; /* Ensure body is scrollable */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .experience-container {
@@ -16,8 +16,8 @@ html, body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    overflow-y: auto; /* Ensure vertical scrolling is enabled */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .experience-title {
@@ -73,7 +73,7 @@ html, body {
 /* Timeline Styles */
 .vertical-timeline-element--work .vertical-timeline-element-icon,
 .vertical-timeline-element--education .vertical-timeline-element-icon {
-    display: none; /* Hide the red circles */
+    display: none;
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content,
@@ -82,7 +82,7 @@ html, body {
     color: #ffffff;
     border: none;
     box-shadow: none;
-    margin: 0 0 30px 0; /* Align to the line */
+    margin: 0 0 30px 0;
     padding: 20px;
     text-align: left;
 }
@@ -98,6 +98,7 @@ html, body {
     box-shadow: none;
 }
 
+/* Disable animations on mobile for smoother scrolling */
 @media (max-width: 768px) {
     .experience-title {
         font-size: 2em;
@@ -130,6 +131,13 @@ html, body {
         text-align: center;
         font-size: 0.8em;
         margin-bottom: 10px;
+    }
+
+    /* Disable hover effects on mobile to avoid any performance issues */
+    .vertical-timeline-element--work .vertical-timeline-element-content:hover,
+    .vertical-timeline-element--education .vertical-timeline-element-content:hover {
+        transform: none;
+        box-shadow: none;
     }
 
     .skills-section ul {
