@@ -1,31 +1,22 @@
 .home-container {
   text-align: center;
-  padding: 50px;
+  padding: 20px; /* Reduced padding for better spacing on mobile */
   background: linear-gradient(to bottom, #7c1a1a, #1c1b1b); /* Maroon gradient background */
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  position: relative;
-}
-
-.vt-logo {
-  position: absolute;
-  top: 60px;
-  left: 50px;
-  width: 400px; /* Adjusted size for better fit */
-  opacity: 0.8;
-  z-index: 1;
+  box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
 
 .header-container {
-  margin-top: 50px; /* Adjust spacing if needed */
+  margin-top: 30px; /* Adjust spacing if needed */
   width: 100%;
 }
 
 .home-title {
-  font-size: 4em;
+  font-size: 3em; /* Adjusted size for better fit on mobile */
   color: #ffcc00; /* Virginia Tech gold color */
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -59,7 +50,7 @@
 }
 
 .social-icon {
-  font-size: 2em;
+  font-size: 1.5em; /* Adjusted for better fit on mobile */
   color: #ffcc00;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -70,26 +61,29 @@
 }
 
 .home-description {
-  font-size: 1.5em;
+  font-size: 1.3em; /* Adjusted for better fit on mobile */
   color: #ffcc00;
-  margin: 30px 0 50px;
+  margin: 20px 0 40px;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  gap: 10px; /* Reduced gap for better fit */
 }
 
 .home-button {
-  padding: 15px 30px;
-  font-size: 1.2em;
+  padding: 10px 20px; /* Adjusted padding */
+  font-size: 1.1em; /* Adjusted font size for better fit */
   color: #ffcc00;
   background: transparent;
   border: 2px solid #ffcc00;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%; /* Make buttons take full width on mobile */
+  max-width: 200px; /* Set maximum width to avoid excessive stretching */
 }
 
 .home-button:hover {
@@ -98,62 +92,35 @@
 }
 
 .animated-text-container {
-  margin-top: 40px;
-  font-size: 2.5em;
+  margin-top: 30px;
+  font-size: 2em; /* Adjusted size for better fit */
   color: #ffcc00;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 0.5s forwards;
-}
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5em; /* Further reduce title size on mobile */
+  }
 
-.fade-out {
-  opacity: 1;
-  animation: fadeOut 0.5s forwards;
-}
+  .home-description {
+    font-size: 1.1em; /* Further reduce description size on mobile */
+    margin: 15px 0 30px;
+  }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+  .animated-text-container {
+    font-size: 1.8em; /* Adjust animated text size */
+  }
 
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
+  .home-button {
+    font-size: 1em; /* Slightly smaller buttons on mobile */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
 
-.location {
-  margin-top: 10px;
-  font-size: 1.5em;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  flex-direction: column; /* Arrange "in" above "NYC" */
-}
-
-.location-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.location-in {
-  font-size: 0.50em;
-  color: #ffcc00; /* Yellow color for "in" */
-}
-
-.location-nyc {
-  font-size: 1.0em;
-  color: #ffffff; /* White color for "NYC" */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+  .button-container {
+    gap: 8px; /* Reduce gap between buttons on mobile */
+  }
 }
