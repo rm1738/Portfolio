@@ -1,134 +1,170 @@
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    background-color: #1c1b1b; /* Background color to match your theme */
-    color: #ffcc00;
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Reduced padding for better spacing on mobile */
+  background-color: #1c1b1b;
+  color: #ffcc00;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  padding: 8px 15px;
+  font-size: 0.9em; /* Reduce the font size slightly */
+  color: #ffcc00;
+  background: transparent;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Make the button take full width on mobile */
+  max-width: 200px; /* Set a maximum width to avoid stretching too much */
+}
+
+.nav-button:hover {
+  background-color: #ffcc00;
+  color: #330000;
+  transform: scale(1.05);
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%; /* Ensure it scales with the screen size */
+  text-align: center;
+  padding: 0 20px; /* Add some padding to the sides for mobile */
+}
+
+.profile-pic {
+  width: 150px; /* Reduce the size for mobile */
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #ffcc00; /* Gold border */
+  z-index: -1;
+  background: linear-gradient(45deg, transparent, transparent 40%, #ffcc00);
+  animation: wavy-border 5s linear infinite;
+}
+
+@keyframes wavy-border {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .nav-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #ffcc00;
-    background: transparent;
-    border: 2px solid #ffcc00;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button-container {
+  margin-bottom: 30px;
+}
+
+.download-button {
+  padding: 10px 15px; /* Adjust padding */
+  font-size: 0.9em; /* Slightly reduce font size */
+  width: 100%;
+  max-width: 300px;
+  color: #ffcc00;
+  background: transparent;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #ffcc00;
+  color: #330000;
+  transform: scale(1.05);
+}
+
+.download-button svg {
+  margin-right: 8px;
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.about-content h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.intro {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 10px; /* Further reduce padding for very small screens */
   }
-  
-  .nav-button:hover {
-    background-color: #ffcc00;
-    color: #330000;
-    transform: scale(1.05);
-  }
-  
+
   .profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    text-align: center;
+    padding: 0 10px;
   }
-  
+
   .profile-pic {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-    border-radius: 50%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 120px; /* Further reduce profile pic size for small screens */
+    height: 120px;
   }
-  
-  .profile-pic::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 4px solid #ffcc00; /* Gold border */
-    z-index: -1;
-    background: linear-gradient(45deg, transparent, transparent 40%, #ffcc00);
-    animation: wavy-border 5s linear infinite;
-  }
-  
-  @keyframes wavy-border {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .download-button-container {
-    margin-bottom: 30px;
-  }
-  
-  .download-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #ffcc00;
-    background: transparent;
-    border: 2px solid #ffcc00;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .download-button:hover {
-    background-color: #ffcc00;
-    color: #330000;
-    transform: scale(1.05);
-  }
-  
-  .download-button svg {
-    margin-right: 8px;
-  }
-  
+
   .about-content {
-    max-width: 800px;
-    text-align: left;
+    max-width: 100%; /* Ensure content scales with screen size */
+    padding: 0 10px; /* Add side padding for readability */
   }
-  
-  .about-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #ffcc00;
+
+  .nav-button {
+    width: 90%; /* Make sure buttons fit within the screen */
+    max-width: 250px;
   }
-  
-  .about-content h2 {
-    font-size: 1.8em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #ffcc00;
+
+  .download-button {
+    width: 90%;
+    max-width: 250px;
   }
-  
-  .about-content p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #ffffff;
-  }
-  
-  .intro {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-  }
-  
+}
