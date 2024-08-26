@@ -1,5 +1,4 @@
-/* Existing styles for the Experience page */
-
+/* Experience.css */
 /* General Styles */
 html, body {
     margin: 0;
@@ -45,13 +44,7 @@ html, body {
     border: 2px solid #ffcc00;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-button:hover {
-    background-color: #ffcc00;
-    color: #330000;
-    transform: scale(1.05);
+    transition: none; /* Disable hover animations */
 }
 
 .switch-container {
@@ -70,20 +63,10 @@ html, body {
     font-size: 16px;
     border-radius: 5px;
     width: auto;
-}
-
-/* Remove White Arrow */
-.vertical-timeline-element--work .vertical-timeline-element-content::before,
-.vertical-timeline-element--education .vertical-timeline-element-content::before {
-    display: none; /* Remove the arrow */
+    transition: none; /* Disable button hover animations */
 }
 
 /* Timeline Styles */
-.vertical-timeline-element--work .vertical-timeline-element-icon,
-.vertical-timeline-element--education .vertical-timeline-element-icon {
-    display: none; /* Remove the red dots */
-}
-
 .vertical-timeline-element--work .vertical-timeline-element-content,
 .vertical-timeline-element--education .vertical-timeline-element-content {
     background-color: transparent;
@@ -93,17 +76,12 @@ html, body {
     margin: 0 0 30px 0; /* Align to the line */
     padding: 20px;
     text-align: left;
+    transition: none; /* Disable hover effect */
 }
 
 .vertical-timeline::before {
     background-color: #ffcc00;
     top: 50px;
-}
-
-.vertical-timeline-element--work .vertical-timeline-element-content:hover,
-.vertical-timeline-element--education .vertical-timeline-element-content:hover {
-    transform: none;
-    box-shadow: none;
 }
 
 /* Mobile Adjustments */
@@ -117,14 +95,13 @@ html, body {
     .vertical-timeline-element--education .vertical-timeline-element-content {
         padding: 15px;
         margin-bottom: 15px;
-        transform: none; /* Disable animations */
-        transition: none; /* Disable transitions */
     }
 
     .nav-button {
         width: 100%;
         padding: 10px;
         font-size: 0.9em;
+        transition: none; /* Disable button hover animations */
     }
 
     .switch-button {
@@ -133,6 +110,7 @@ html, body {
         width: 100%;
         margin-top: 10px;
         background-color: #ffcc00; /* Ensure button color remains consistent */
+        transition: none; /* Disable button hover animations */
     }
 
     .vertical-timeline-element--left .vertical-timeline-element-date,
