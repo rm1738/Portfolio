@@ -57,71 +57,62 @@
     width: auto;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content,
-.vertical-timeline-element--education .vertical-timeline-element-content {
-    background-color: #7c1a1a;
-    color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 10px; /* Smaller padding to reduce box size */
-    text-align: left;
-    width: auto; /* Dynamic width based on content */
-    max-width: 85%; /* Limit width to prevent overflow */
-    margin-left: 20px; /* Ensure proper spacing from the line */
+.vertical-timeline-element-content {
+    background: none;
+    color: #ffcc00;
+    border-left: 2px solid #ffcc00; /* Add a vertical line */
+    padding-left: 20px; /* Add padding to space the text from the line */
+    margin-bottom: 20px;
+    font-size: 1em;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content {
-    margin-left: 20px; /* Space from the left side of the line */
-}
-
-.vertical-timeline-element--education .vertical-timeline-element-content {
-    margin-left: 20px; /* Space from the left side of the line */
-}
-
-.vertical-timeline-element--work .vertical-timeline-element-content h3,
-.vertical-timeline-element--work .vertical-timeline-element-content h4,
-.vertical-timeline-element--education .vertical-timeline-element-content h3,
-.vertical-timeline-element--education .vertical-timeline-element-content h4 {
+.vertical-timeline-element-title {
+    font-size: 1.5em;
+    margin: 0;
     color: #ffcc00;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content p,
-.vertical-timeline-element--education .vertical-timeline-element-content p {
+.vertical-timeline-element-subtitle {
+    font-size: 1.2em;
+    margin: 5px 0;
     color: #ffffff;
-    font-size: 0.9em;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-icon,
-.vertical-timeline-element--education .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 4px #ffcc00, inset 0 2px 0 #ffcc00;
-    margin-left: -10px; /* Align icon properly on the timeline */
+.vertical-timeline-element-date {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-section li {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.skills-section .skill-icon {
+    margin-right: 8px;
+    font-size: 1.2em;
 }
 
 .vertical-timeline::before {
-    background-color: #ffcc00;
-    top: 20px;
-    bottom: 20px; /* Ensure the line ends where the button starts */
+    background-color: transparent; /* Hide the line that runs through the middle */
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content:hover,
-.vertical-timeline-element--education .vertical-timeline-element-content:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 25px rgba(255, 204, 0, 0.8);
+.vertical-timeline-element-icon {
+    display: none; /* Hide the icons for simplicity */
 }
 
 @media (max-width: 768px) {
     .experience-title {
         font-size: 2em;
         margin-bottom: 20px;
-    }
-
-    .vertical-timeline-element--work .vertical-timeline-element-content,
-    .vertical-timeline-element--education .vertical-timeline-element-content {
-        padding: 8px; /* Smaller padding for mobile */
-        margin-bottom: 15px;
-        margin-left: 15px; /* Ensure proper spacing from the line on mobile */
-        max-width: 100%; /* Allow content to fill the screen width */
     }
 
     .nav-button {
@@ -137,16 +128,20 @@
         margin-top: 10px;
     }
 
-    .vertical-timeline-element--left .vertical-timeline-element-date,
-    .vertical-timeline-element--right .vertical-timeline-element-date {
-        left: 0;
-        right: 0;
-        text-align: center;
-        font-size: 0.8em;
-        margin-bottom: 10px;
+    .vertical-timeline-element-content {
+        padding-left: 15px;
+        font-size: 0.9em;
     }
 
-    .skills-section ul {
-        padding-left: 15px;
+    .vertical-timeline-element-title {
+        font-size: 1.2em;
+    }
+
+    .vertical-timeline-element-subtitle {
+        font-size: 1em;
+    }
+
+    .skills-section .skill-icon {
+        font-size: 1em;
     }
 }
