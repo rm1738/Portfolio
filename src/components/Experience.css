@@ -1,3 +1,12 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
 .experience-container {
     padding: 20px;
     background-color: #1c1b1b;
@@ -5,6 +14,7 @@
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    overflow-y: auto; /* Ensure vertical scrolling is enabled */
 }
 
 .experience-title {
@@ -44,8 +54,6 @@
     justify-content: center;
     margin-bottom: 20px;
     margin-top: -20px;
-    position: relative;
-    z-index: 10;
 }
 
 .switch-button {
@@ -57,53 +65,34 @@
     font-size: 16px;
     border-radius: 5px;
     width: auto;
-    position: relative;
-    top: -20px;
-    z-index: 10;
+}
+
+/* Timeline Styles */
+.vertical-timeline-element--work .vertical-timeline-element-icon,
+.vertical-timeline-element--education .vertical-timeline-element-icon {
+    display: none; /* Hide the red circles */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content,
 .vertical-timeline-element--education .vertical-timeline-element-content {
+    background-color: transparent;
     color: #ffffff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 0 30px 0;
+    border: none;
+    box-shadow: none;
+    margin: 0 0 30px 0; /* Align to the line */
     padding: 20px;
     text-align: left;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content h3,
-.vertical-timeline-element--work .vertical-timeline-element-content h4,
-.vertical-timeline-element--education .vertical-timeline-element-content h3,
-.vertical-timeline-element--education .vertical-timeline-element-content h4 {
-    color: #ffcc00;
-}
-
-.vertical-timeline-element--work .vertical-timeline-element-content p,
-.vertical-timeline-element--education .vertical-timeline-element-content p {
-    color: #ffffff;
-    font-size: 0.9em;
-}
-
-.vertical-timeline-element--work .vertical-timeline-element-icon,
-.vertical-timeline-element--education .vertical-timeline-element-icon {
-    display: none; /* Hide the red circles/icons */
-}
-
 .vertical-timeline::before {
     background-color: #ffcc00;
-    top: 50px;
-    bottom: 20px;
-    position: absolute;
-    content: '';
-    width: 4px;
-    left: 50%;
-    margin-left: -2px;
+    top: 20px;
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content:hover,
 .vertical-timeline-element--education .vertical-timeline-element-content:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 25px rgba(255, 204, 0, 0.8);
+    transform: none;
+    box-shadow: none;
 }
 
 @media (max-width: 768px) {
@@ -127,9 +116,8 @@
     .switch-button {
         padding: 10px 15px;
         font-size: 1em;
-        width: auto;
+        width: 100%;
         margin-top: 10px;
-        top: -15px;
     }
 
     .vertical-timeline-element--left .vertical-timeline-element-date,
