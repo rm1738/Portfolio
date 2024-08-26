@@ -43,7 +43,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    margin-top: -20px; /* Adjusted margin to ensure the button stays above the line */
+    margin-top: -20px;
 }
 
 .switch-button {
@@ -57,31 +57,35 @@
     width: auto;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content {
+.vertical-timeline-element--work .vertical-timeline-element-content,
+.vertical-timeline-element--education .vertical-timeline-element-content {
     background-color: #7c1a1a;
     color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 20px; /* Offset to ensure content is not on the line */
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 15px;
+    margin: 0 0 30px 0; /* Align to the line */
+    padding: 20px;
+    text-align: left;
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content h3,
-.vertical-timeline-element--work .vertical-timeline-element-content h4 {
+.vertical-timeline-element--work .vertical-timeline-element-content h4,
+.vertical-timeline-element--education .vertical-timeline-element-content h3,
+.vertical-timeline-element--education .vertical-timeline-element-content h4 {
     color: #ffcc00;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content p {
+.vertical-timeline-element--work .vertical-timeline-element-content p,
+.vertical-timeline-element--education .vertical-timeline-element-content p {
     color: #ffffff;
     font-size: 0.9em;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-icon {
+.vertical-timeline-element--work .vertical-timeline-element-icon,
+.vertical-timeline-element--education .vertical-timeline-element-icon {
     box-shadow: 0 0 0 4px #ffcc00, inset 0 2px 0 #ffcc00;
-    left: -28px; /* Ensures the icon is offset properly from the line */
+    margin-left: -10px; /* Align icon properly on the timeline */
 }
 
 .vertical-timeline::before {
@@ -89,23 +93,22 @@
     top: 20px;
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content:hover {
+.vertical-timeline-element--work .vertical-timeline-element-content:hover,
+.vertical-timeline-element--education .vertical-timeline-element-content:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 25px rgba(255, 204, 0, 0.8);
 }
 
-/* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
     .experience-title {
         font-size: 2em;
         margin-bottom: 20px;
     }
 
-    .vertical-timeline-element--work .vertical-timeline-element-content {
-        padding: 10px;
+    .vertical-timeline-element--work .vertical-timeline-element-content,
+    .vertical-timeline-element--education .vertical-timeline-element-content {
+        padding: 15px;
         margin-bottom: 15px;
-        margin-left: 0;
-        margin-right: 0;
     }
 
     .nav-button {
