@@ -47,8 +47,8 @@
 /* Button Styling */
 button {
   display: block;
-  width: 100%;
-  max-width: 100%;
+  width: 90%; /* Adjust button width to fit within the screen */
+  max-width: 100%; 
   padding: 12px;
   font-size: 1rem;
   margin: 10px auto;
