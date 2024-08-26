@@ -34,6 +34,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden; /* Prevents content from overflowing */
 }
 
 /* Link Styling */
@@ -95,9 +96,14 @@ button:hover {
   }
 
   button {
-    width: 90%;
+    width: 100%; /* Ensure buttons take up full width */
     padding: 12px;
     font-size: 1rem;
     margin: 10px auto;
   }
+}
+
+/* Prevent any horizontal scrolling on the body */
+body {
+  overflow-x: hidden;
 }
