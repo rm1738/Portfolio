@@ -95,7 +95,7 @@ html, body {
 
 .vertical-timeline::before {
     background-color: #ffcc00;
-    top: 20px;
+    top: 40px;
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content:hover,
