@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* Reduced padding for better spacing on mobile */
+  padding: 30px; /* Moderate padding */
   background-color: #1c1b1b;
   color: #ffcc00;
   min-height: 100vh;
@@ -13,22 +13,22 @@
 .button-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-  gap: 10px;
+  gap: 15px;
   margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
 }
 
 .nav-button {
-  padding: 8px 15px;
-  font-size: 0.9em; /* Reduce the font size slightly */
+  padding: 10px 20px;
+  font-size: 1em;
   color: #ffcc00;
   background: transparent;
   border: 2px solid #ffcc00;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-  width: 100%; /* Make the button take full width on mobile */
-  max-width: 200px; /* Set a maximum width to avoid stretching too much */
+  width: auto; /* Allow buttons to resize based on content */
+  max-width: 100%; /* Prevent overflow */
 }
 
 .nav-button:hover {
@@ -41,14 +41,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%; /* Ensure it scales with the screen size */
+  max-width: 90%; /* Prevent shrinking on large screens */
   text-align: center;
-  padding: 0 20px; /* Add some padding to the sides for mobile */
+  padding: 0 20px;
 }
 
 .profile-pic {
-  width: 150px; /* Reduce the size for mobile */
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   margin-bottom: 20px;
   position: relative;
@@ -65,7 +65,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 4px solid #ffcc00; /* Gold border */
+  border: 4px solid #ffcc00;
   z-index: -1;
   background: linear-gradient(45deg, transparent, transparent 40%, #ffcc00);
   animation: wavy-border 5s linear infinite;
@@ -85,10 +85,8 @@
 }
 
 .download-button {
-  padding: 10px 15px; /* Adjust padding */
-  font-size: 0.9em; /* Slightly reduce font size */
-  width: 100%;
-  max-width: 300px;
+  padding: 10px 20px;
+  font-size: 1em;
   color: #ffcc00;
   background: transparent;
   border: 2px solid #ffcc00;
@@ -97,6 +95,8 @@
   display: inline-flex;
   align-items: center;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  width: auto;
+  max-width: 100%;
 }
 
 .download-button:hover {
@@ -141,30 +141,31 @@
 
 @media (max-width: 768px) {
   .about-container {
-    padding: 10px; /* Further reduce padding for very small screens */
+    padding: 20px; /* Moderate padding for mobile */
   }
 
   .profile-section {
-    padding: 0 10px;
+    max-width: 100%; /* Ensure full width on mobile */
   }
 
   .profile-pic {
-    width: 120px; /* Further reduce profile pic size for small screens */
-    height: 120px;
+    width: 150px; /* Smaller profile pic for mobile */
+    height: 150px;
   }
 
   .about-content {
-    max-width: 100%; /* Ensure content scales with screen size */
-    padding: 0 10px; /* Add side padding for readability */
+    max-width: 100%;
+    padding: 0 10px;
   }
 
   .nav-button {
-    width: 90%; /* Make sure buttons fit within the screen */
-    max-width: 250px;
+    width: 100%; /* Full width on mobile */
+    max-width: none; /* Allow buttons to stretch */
   }
 
   .download-button {
-    width: 90%;
-    max-width: 250px;
+    width: 100%;
+    max-width: none; /* Allow download button to stretch */
   }
 }
+ 
