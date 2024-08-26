@@ -6,10 +6,8 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import IEEE from './components/IEEE'; // Correct path
+import IEEE from './components/IEEE';
 import './App.css';
-
-
 
 function App() {
   return (
@@ -22,7 +20,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/ieee" element={<IEEE />} /> 
+          <Route path="/ieee" element={<IEEE />} />
         </Routes>
       </div>
     </Router>
