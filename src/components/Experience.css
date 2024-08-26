@@ -1,5 +1,5 @@
 .experience-container {
-    padding: 20px; /* Reduce padding for smaller screens */
+    padding: 30px;
     background-color: #1c1b1b; /* Dark background to complement the maroon */
     color: #ffcc00;
     min-height: 100vh;
@@ -9,8 +9,8 @@
 
 .experience-title {
     text-align: center;
-    font-size: 2.5em; /* Adjust font size for mobile */
-    margin-bottom: 30px; /* Reduce margin for smaller screens */
+    font-size: 2.5em; /* Adjust font size for better readability */
+    margin-bottom: 30px; /* Adjust margin */
     color: #ffcc00;
 }
 
@@ -19,8 +19,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-    gap: 10px; /* Reduce gap for smaller screens */
-    margin-bottom: 20px; /* Reduce margin for smaller screens */
+    gap: 10px; /* Adjust gap */
+    margin-bottom: 30px; /* Adjust margin */
 }
 
 .nav-button {
@@ -32,8 +32,14 @@
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    width: 100%; /* Full width on mobile */
-    max-width: 250px; /* Cap the width for larger screens */
+    width: auto; /* Auto width to prevent buttons from becoming too large */
+    max-width: 200px; /* Cap the width on larger screens */
+}
+
+.nav-button:hover {
+    background-color: #ffcc00;
+    color: #330000;
+    transform: scale(1.05);
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content {
@@ -44,20 +50,20 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
     margin-left: 0; /* Align left */
-    margin-bottom: 20px; /* Reduce space between elements for smaller screens */
-    padding: 15px; /* Add padding for better spacing */
+    margin-bottom: 20px; /* Adjust space between elements */
+    padding: 20px; /* Adjust padding */
     box-sizing: border-box;
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content h3,
 .vertical-timeline-element--work .vertical-timeline-element-content h4 {
     color: #ffcc00; /* Gold color for titles */
-    font-size: 1.5em; /* Adjust font size for mobile */
+    font-size: 1.5em; /* Adjust font size */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content p {
     color: #ffffff; /* White color for descriptions */
-    font-size: 1em; /* Adjust font size for readability */
+    font-size: 1em; /* Adjust font size */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-icon {
@@ -68,6 +74,8 @@
 .vertical-timeline::before {
     background-color: #ffcc00; /* Gold color for the line */
     top: 20px;
+    left: 50%; /* Center the line */
+    transform: translateX(-50%);
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content:hover {
@@ -77,25 +85,27 @@
 
 /* Align dates properly for left-aligned content */
 .vertical-timeline-element--left .vertical-timeline-element-date {
-    left: -100px; /* Adjust left offset to bring the date closer on mobile */
+    left: -80px; /* Adjust left offset to bring the date closer */
     text-align: right;
+    width: 120px; /* Ensure dates are within this width */
 }
 
 /* Align dates properly for right-aligned content */
 .vertical-timeline-element--right .vertical-timeline-element-date {
-    right: -100px; /* Adjust right offset to bring the date closer on mobile */
+    right: -80px; /* Adjust right offset to bring the date closer */
     text-align: left;
+    width: 120px; /* Ensure dates are within this width */
 }
 
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
     .experience-container {
-        padding: 10px; /* Further reduce padding for very small screens */
+        padding: 15px; /* Further reduce padding for smaller screens */
     }
 
     .experience-title {
-        font-size: 2em; /* Further reduce font size for smaller screens */
-        margin-bottom: 20px; /* Adjust margin for smaller screens */
+        font-size: 2em; /* Further reduce font size */
+        margin-bottom: 20px; /* Adjust margin */
     }
 
     .button-container {
@@ -108,19 +118,19 @@
     }
 
     .vertical-timeline-element--work .vertical-timeline-element-content {
-        padding: 10px; /* Adjust padding for mobile */
+        padding: 15px; /* Adjust padding */
         margin-bottom: 15px; /* Adjust space between elements */
     }
 
     .vertical-timeline-element--work .vertical-timeline-element-content h3,
     .vertical-timeline-element--work .vertical-timeline-element-content h4 {
-        font-size: 1.2em; /* Further adjust font size for smaller screens */
+        font-size: 1.2em; /* Adjust font size */
     }
 
     .vertical-timeline-element--left .vertical-timeline-element-date,
     .vertical-timeline-element--right .vertical-timeline-element-date {
         font-size: 0.9em; /* Adjust font size for dates */
-        left: -80px; /* Adjust date position on mobile */
-        right: -80px;
+        left: -60px; /* Adjust date position */
+        right: -60px;
     }
 }
