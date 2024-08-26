@@ -1,4 +1,3 @@
-/* Experience.css */
 /* General Styles */
 html, body {
     margin: 0;
@@ -7,7 +6,6 @@ html, body {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .experience-container {
@@ -17,8 +15,6 @@ html, body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .experience-title {
@@ -44,7 +40,6 @@ html, body {
     border: 2px solid #ffcc00;
     border-radius: 5px;
     text-decoration: none;
-    transition: none; /* Disable hover animations */
 }
 
 .switch-container {
@@ -63,25 +58,29 @@ html, body {
     font-size: 16px;
     border-radius: 5px;
     width: auto;
-    transition: none; /* Disable button hover animations */
 }
 
-/* Timeline Styles */
+/* Remove All Animations and Hover Effects */
 .vertical-timeline-element--work .vertical-timeline-element-content,
 .vertical-timeline-element--education .vertical-timeline-element-content {
     background-color: transparent;
     color: #ffffff;
     border: none;
     box-shadow: none;
-    margin: 0 0 30px 0; /* Align to the line */
+    margin: 0 0 30px 0;
     padding: 20px;
     text-align: left;
-    transition: none; /* Disable hover effect */
 }
 
 .vertical-timeline::before {
     background-color: #ffcc00;
     top: 50px;
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content:hover,
+.vertical-timeline-element--education .vertical-timeline-element-content:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 /* Mobile Adjustments */
@@ -101,7 +100,6 @@ html, body {
         width: 100%;
         padding: 10px;
         font-size: 0.9em;
-        transition: none; /* Disable button hover animations */
     }
 
     .switch-button {
@@ -109,8 +107,7 @@ html, body {
         font-size: 1em;
         width: 100%;
         margin-top: 10px;
-        background-color: #ffcc00; /* Ensure button color remains consistent */
-        transition: none; /* Disable button hover animations */
+        background-color: #ffcc00;
     }
 
     .vertical-timeline-element--left .vertical-timeline-element-date,
@@ -120,9 +117,5 @@ html, body {
         text-align: center;
         font-size: 0.8em;
         margin-bottom: 10px;
-    }
-
-    .skills-section ul {
-        padding-left: 15px;
     }
 }
