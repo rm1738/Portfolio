@@ -64,18 +64,19 @@
     border-radius: 8px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 15px;
+    padding: 10px; /* Smaller padding to reduce box size */
     text-align: left;
     width: auto; /* Dynamic width based on content */
-    max-width: 90%; /* Limit width to prevent overflow */
+    max-width: 85%; /* Limit width to prevent overflow */
+    margin-left: 20px; /* Ensure proper spacing from the line */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content {
-    margin-left: 30px; /* Space from the left side of the line */
+    margin-left: 20px; /* Space from the left side of the line */
 }
 
 .vertical-timeline-element--education .vertical-timeline-element-content {
-    margin-left: 30px; /* Space from the left side of the line */
+    margin-left: 20px; /* Space from the left side of the line */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content h3,
@@ -99,8 +100,8 @@
 
 .vertical-timeline::before {
     background-color: #ffcc00;
-    top: 50px;
-    bottom: 50px;
+    top: 20px;
+    bottom: 20px; /* Ensure the line ends where the button starts */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content:hover,
@@ -117,9 +118,9 @@
 
     .vertical-timeline-element--work .vertical-timeline-element-content,
     .vertical-timeline-element--education .vertical-timeline-element-content {
-        padding: 10px;
-        margin-bottom: 10px;
-        margin-left: 20px; /* Ensure proper spacing from the line on mobile */
+        padding: 8px; /* Smaller padding for mobile */
+        margin-bottom: 15px;
+        margin-left: 15px; /* Ensure proper spacing from the line on mobile */
         max-width: 100%; /* Allow content to fill the screen width */
     }
 
