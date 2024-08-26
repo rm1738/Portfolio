@@ -1,0 +1,134 @@
+.experience-container {
+    padding: 50px;
+    background-color: #1c1b1b; /* Dark background to complement the maroon */
+    color: #ffcc00;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.experience-title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #ffcc00;
+}
+
+/* Button container for navigation buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffcc00;
+    background: transparent;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #ffcc00;
+    color: #330000;
+    transform: scale(1.05);
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content {
+    background-color: #7c1a1a; /* Maroon background for content */
+    color: #ffffff; /* Text color */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover animation */
+    text-align: left;
+    margin-left: 0; /* Align left */
+    margin-bottom: 30px; /* Add space between elements */
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content h3,
+.vertical-timeline-element--work .vertical-timeline-element-content h4 {
+    color: #ffcc00; /* Gold color for titles */
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content p {
+    color: #ffffff; /* White color for descriptions */
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #ffcc00, inset 0 2px 0 #ffcc00; /* Gold border around the icon */
+}
+
+.vertical-timeline::before {
+    background-color: #ffcc00; /* Gold color for the line */
+    top: 20px; /* Adjust this value to control where the line starts */
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 0px 25px rgba(255, 204, 0, 0.8); /* Add a glowing effect */
+}
+
+/* Align dates properly for left-aligned content */
+.vertical-timeline-element--left .vertical-timeline-element-date {
+    left: -120px; /* Adjust left offset to bring the date closer */
+    text-align: right;
+}
+
+/* Align dates properly for right-aligned content */
+.vertical-timeline-element--right .vertical-timeline-element-date {
+    right: -120px; /* Adjust right offset to bring the date closer */
+    text-align: left;
+}
+
+/* Link style adjustments */
+.vertical-timeline-element--work a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.vertical-timeline-element--work a:hover,
+.vertical-timeline-element--work a:focus,
+.vertical-timeline-element--work a:active {
+    text-decoration: none; /* No underline on hover, focus, or active */
+    color: inherit; /* Keep color consistent */
+}
+
+/* Experience.css */
+.switch-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -40px; /* Negative margin to move the button higher */
+  }
+  
+  .switch-button {
+    background-color: #ffcc00;
+    border: none;
+    color: #7c1a1a;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .skills-section ul {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .skills-section li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .skill-icon {
+    margin-right: 10px; /* Adjust this to control space between icon and text */
+    font-size: 1.2rem;
+  }
+  

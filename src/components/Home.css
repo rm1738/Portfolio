@@ -1,0 +1,159 @@
+.home-container {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to bottom, #7c1a1a, #1c1b1b); /* Maroon gradient background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.vt-logo {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  width: 400px; /* Adjusted size for better fit */
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.header-container {
+  margin-top: 50px; /* Adjust spacing if needed */
+  width: 100%;
+}
+
+.home-title {
+  font-size: 4em;
+  color: #ffcc00; /* Virginia Tech gold color */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px #000; /* Add a slight shadow for contrast */
+}
+
+.typing-animation {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #ffcc00; /* Match the cursor to the text color */
+  animation: typing 4s steps(12, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 12ch; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #ffcc00; }
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 2em;
+  color: #ffcc00;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+.home-description {
+  font-size: 1.5em;
+  color: #ffcc00;
+  margin: 30px 0 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.home-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: #ffcc00;
+  background: transparent;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #ffcc00;
+  color: #330000;
+}
+
+.animated-text-container {
+  margin-top: 40px;
+  font-size: 2.5em;
+  color: #ffcc00;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.location {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  flex-direction: column; /* Arrange "in" above "NYC" */
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-in {
+  font-size: 0.50em;
+  color: #ffcc00; /* Yellow color for "in" */
+}
+
+.location-nyc {
+  font-size: 1.0em;
+  color: #ffffff; /* White color for "NYC" */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}

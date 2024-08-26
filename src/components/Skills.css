@@ -1,0 +1,84 @@
+.skills-container {
+  padding: 50px;
+  background-color: #1c1b1b; /* Match the theme */
+  color: #ffcc00;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #ffcc00;
+  background: transparent;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #ffcc00;
+  color: #330000;
+  transform: scale(1.05);
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 50px;
+  color: #ffcc00;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.skills-box {
+  background-color: #7c1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.skills-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 25px rgba(255, 204, 0, 0.8);
+}
+
+.category-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-level {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bullet-icon {
+  color: #ffcc00;
+  font-size: 1.2em;
+}

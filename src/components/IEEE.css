@@ -1,0 +1,14 @@
+.ieee-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .ieee-container h1 {
+    color: #7c1a1a;
+  }
+  
+  .ieee-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

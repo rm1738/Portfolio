@@ -1,0 +1,134 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #1c1b1b; /* Background color to match your theme */
+    color: #ffcc00;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffcc00;
+    background: transparent;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #ffcc00;
+    color: #330000;
+    transform: scale(1.05);
+  }
+  
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .profile-pic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #ffcc00; /* Gold border */
+    z-index: -1;
+    background: linear-gradient(45deg, transparent, transparent 40%, #ffcc00);
+    animation: wavy-border 5s linear infinite;
+  }
+  
+  @keyframes wavy-border {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .download-button-container {
+    margin-bottom: 30px;
+  }
+  
+  .download-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffcc00;
+    background: transparent;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #ffcc00;
+    color: #330000;
+    transform: scale(1.05);
+  }
+  
+  .download-button svg {
+    margin-right: 8px;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .about-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  .about-content h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+  }
+  
+  .about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .intro {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
