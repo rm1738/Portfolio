@@ -73,7 +73,7 @@ html, body {
 /* Timeline Styles */
 .vertical-timeline-element--work .vertical-timeline-element-icon,
 .vertical-timeline-element--education .vertical-timeline-element-icon {
-    display: block; /* Keep the timeline icons */
+    display: none; /* Remove the red dots */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-content,
