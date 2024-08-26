@@ -60,10 +60,12 @@
 .vertical-timeline-element-content {
     background: none;
     color: #ffcc00;
-    border-left: 2px solid #ffcc00; /* Add a vertical line */
-    padding-left: 20px; /* Add padding to space the text from the line */
+    padding: 10px;
     margin-bottom: 20px;
     font-size: 1em;
+    position: relative;
+    text-align: left;
+    border-left: 2px solid #ffcc00; /* Retain the timeline line */
 }
 
 .vertical-timeline-element-title {
@@ -81,6 +83,7 @@
 .vertical-timeline-element-date {
     font-size: 0.9em;
     color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .skills-section ul {
@@ -102,7 +105,10 @@
 }
 
 .vertical-timeline::before {
-    background-color: transparent; /* Hide the line that runs through the middle */
+    background-color: #ffcc00; /* Keep the timeline line */
+    width: 2px;
+    top: 20px;
+    bottom: 20px;
 }
 
 .vertical-timeline-element-icon {
