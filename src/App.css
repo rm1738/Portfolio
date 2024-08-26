@@ -1,5 +1,7 @@
+/* General Styles */
 .App {
   text-align: center;
+  padding: 10px; /* Add padding for better spacing on smaller screens */
 }
 
 .App-logo {
@@ -7,12 +9,14 @@
   pointer-events: none;
 }
 
+/* Animation */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Header Styling */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +28,15 @@
   color: white;
 }
 
+/* Link Styling */
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  padding: 10px; /* Add padding around links for better tap targets */
+  font-size: 1.1em; /* Increase font size slightly for readability */
 }
 
+/* Keyframes for Logo Spin Animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,4 +46,20 @@
   }
 }
 
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+  .App-header {
+    min-height: 50vh; /* Reduce height on mobile */
+    font-size: calc(8px + 2vmin); /* Slightly smaller font on mobile */
+    padding: 20px; /* Add padding for better spacing */
+  }
 
+  .App-logo {
+    height: 30vmin; /* Adjust logo size for mobile */
+    animation: App-logo-spin infinite 30s linear; /* Slower animation on mobile */
+  }
+
+  .App-link {
+    font-size: 16px; /* Smaller size for mobile screens */
+  }
+}
