@@ -47,9 +47,6 @@ function Experience() {
               <a href="https://ranial.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <h3 className="vertical-timeline-element-title">Associate Solutions Engineer</h3>
                 <h4 className="vertical-timeline-element-subtitle">Ranial Systems - New York, NY</h4>
-                <p>
-                  Implementing and integrating applications for microgrid and energy management projects. Testing models for operational intelligence, troubleshooting AI components, and engaging with clients and partners to drive business growth.
-                </p>
                 <h4>Skills:</h4>
                 <div className="skills-section">
                   <ul>
@@ -72,9 +69,6 @@ function Experience() {
               <a href="https://www.youtube.com/watch?v=jMc0rQBXLdU" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <h3 className="vertical-timeline-element-title">Systems Integration Lead</h3>
                 <h4 className="vertical-timeline-element-subtitle">BOEING & NAVAIR Project - Blacksburg, VA</h4>
-                <p>
-                  Built and tested an autonomous robot, snagging 3rd place at IEEE SoutheastCon 2024. Led the team to achieve 99% reliability in system activation with a green light. Streamlined timelines and cut costs while keeping everyone in the loop with detailed progress reports.
-                </p>
                 <h4>Skills:</h4>
                 <div className="skills-section">
                   <ul>
@@ -95,9 +89,6 @@ function Experience() {
               <a href="https://www.siemens.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <h3 className="vertical-timeline-element-title">Software Developer Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">Siemens Digital - Abu Dhabi, UAE</h4>
-                <p>
-                  Crafted software solutions with Siemens’ MindSphere API, pulling and processing massive data sets. Delivered interactive Python dashboards for clients, making complex data easy to understand and act on.
-                </p>
                 <h4>Skills:</h4>
                 <div className="skills-section">
                   <ul>
@@ -117,9 +108,6 @@ function Experience() {
               <a href="https://www.linkedin.com/company/telinstra-fzco/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <h3 className="vertical-timeline-element-title">Software Architect Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">Telinstra - Dubai, UAE</h4>
-                <p>
-                  Boosted performance by optimizing code, implemented thorough testing with JUnit and PyTest, and streamlined data migration for oil and gas control systems, making them faster and more reliable.
-                </p>
                 <h4>Skills:</h4>
                 <div className="skills-section">
                   <ul>
@@ -141,9 +129,6 @@ function Experience() {
             >
               <h3 className="vertical-timeline-element-title">B.S. in Computer Engineering & Electrical Engineering (Double Major)</h3>
               <h4 className="vertical-timeline-element-subtitle">Virginia Tech - Blacksburg, VA</h4>
-              <p>
-                Focused in Controls, Robotics, Autonomy. Minored in Computer Science. 
-              </p>
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
@@ -154,9 +139,6 @@ function Experience() {
             >
               <h3 className="vertical-timeline-element-title">Emirates International School</h3>
               <h4 className="vertical-timeline-element-subtitle">Dubai, UAE</h4>
-              <p>
-                Completed high school education with receiving an IB Diploma with Higher level Mathematics, Physics and Economics.
-              </p>
             </VerticalTimelineElement>
           </>
         )}
