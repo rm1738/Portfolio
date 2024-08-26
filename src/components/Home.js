@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Home.css';
-import vtLogo from '../images/VT.png';
 
 function Home() {
   const [currentText, setCurrentText] = useState('Computer Engineer');
@@ -20,7 +19,6 @@ function Home() {
 
   return (
     <div className="home-container">
-      <img src={vtLogo} alt="Virginia Tech Logo" className="vt-logo" />
       <div className="header-container">
         <h1 className="home-title">
           <span className="typing-animation">Hi, I'm Rahul!</span>
