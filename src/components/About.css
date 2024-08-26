@@ -164,7 +164,24 @@
   }
 
   .download-button {
-    width: calc(100% - 40px); /* Adjust width and ensure it doesn’t overflow */
-    max-width: none; /* Allow download button to stretch */
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffcc00;
+    background: transparent;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; /* Use inline-block to size the button based on content */
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    max-width: 100%; /* Prevent overflow */
+    white-space: nowrap; /* Prevent the text from wrapping */
   }
-}
+  
+  @media (max-width: 768px) {
+    .download-button {
+      width: auto; /* Adjust width to fit content */
+      margin: 0 auto; /* Center the button on mobile */
+    }
+  }
+  
