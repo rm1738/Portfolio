@@ -70,6 +70,12 @@ html, body {
     width: auto;
 }
 
+/* Remove White Arrow */
+.vertical-timeline-element--work .vertical-timeline-element-content::before,
+.vertical-timeline-element--education .vertical-timeline-element-content::before {
+    display: none; /* Remove the arrow */
+}
+
 /* Timeline Styles */
 .vertical-timeline-element--work .vertical-timeline-element-icon,
 .vertical-timeline-element--education .vertical-timeline-element-icon {
@@ -122,6 +128,7 @@ html, body {
         font-size: 1em;
         width: 100%;
         margin-top: 10px;
+        background-color: #ffcc00; /* Ensure button color remains consistent */
     }
 
     .vertical-timeline-element--left .vertical-timeline-element-date,
