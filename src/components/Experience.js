@@ -43,6 +43,7 @@ function Experience() {
               date="August 2024 - Present"
               iconStyle={{ background: '#7c1a1a', color: '#fff' }} 
               contentStyle={{ background: '#7c1a1a', color: '#fff' }}  
+              animate={false} /* Disable animation */
             >
               <a href="https://ranial.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <h3 className="vertical-timeline-element-title">Associate Solutions Engineer</h3>
@@ -65,6 +66,7 @@ function Experience() {
               date="August 2023 - May 2024"
               iconStyle={{ background: '#7c1a1a', color: '#fff' }} 
               contentStyle={{ background: '#7c1a1a', color: '#fff' }}  
+              animate={false} /* Disable animation */
             >
               <a href="https://www.youtube.com/watch?v=jMc0rQBXLdU" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <h3 className="vertical-timeline-element-title">Systems Integration Lead</h3>
@@ -85,6 +87,7 @@ function Experience() {
               date="June 2022 - August 2022"
               iconStyle={{ background: '#7c1a1a', color: '#fff' }}  
               contentStyle={{ background: '#7c1a1a', color: '#fff' }}  
+              animate={false} /* Disable animation */
             >
               <a href="https://www.siemens.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <h3 className="vertical-timeline-element-title">Software Developer Intern</h3>
@@ -104,6 +107,7 @@ function Experience() {
               date="January 2020 - May 2020"
               iconStyle={{ background: '#7c1a1a', color: '#fff' }}  
               contentStyle={{ background: '#7c1a1a', color: '#fff' }}  
+              animate={false} /* Disable animation */
             >
               <a href="https://www.linkedin.com/company/telinstra-fzco/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <h3 className="vertical-timeline-element-title">Software Architect Intern</h3>
@@ -126,6 +130,7 @@ function Experience() {
               date="August 2019 - May 2024"
               iconStyle={{ background: '#7c1a1a', color: '#fff' }} 
               contentStyle={{ background: '#7c1a1a', color: '#fff' }}  
+              animate={false} /* Disable animation */
             >
               <h3 className="vertical-timeline-element-title">B.S. in Computer Engineering & Electrical Engineering (Double Major)</h3>
               <h4 className="vertical-timeline-element-subtitle">Virginia Tech - Blacksburg, VA</h4>
@@ -136,8 +141,9 @@ function Experience() {
               date="2006 - 2019"
               iconStyle={{ background: '#7c1a1a', color: '#fff' }} 
               contentStyle={{ background: '#7c1a1a', color: '#fff' }}  
+              animate={false} /* Disable animation */
             >
-              <h3 className="vertical-timeline-element-title">Emirates International School</h3>
+              <h3 className="vertical-timeline-element-title">Emirates International School</h4>
               <h4 className="vertical-timeline-element-subtitle">Dubai, UAE</h4>
             </VerticalTimelineElement>
           </>
