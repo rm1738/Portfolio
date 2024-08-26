@@ -5,9 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5; /* Light background for better readability */
+  font-size: calc(12px + 0.5vw); /* Responsive font size */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: calc(10px + 0.5vw); /* Slightly smaller on mobile */
+    padding: 10px; /* Add padding for better spacing on smaller screens */
+  }
 }
